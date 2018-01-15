@@ -13,7 +13,7 @@
           <?php foreach($stores as $store){ ?>
             <option value="<?php echo $store['store_id']; ?>" <?php echo ($store['store_id'] ==  $store_id)? 'selected="selected"' : ''; ?>><?php echo $store['name']; ?></option>
           <?php } ?>
-        </select> 
+        </select>
         <?php } ?>
         <button id="save_and_stay" data-toggle="tooltip" title="<?php echo $button_save_and_stay; ?>" class="btn btn-success"><i class="fa fa-save"></i></button>
         <button type="submit" form="form" data-toggle="tooltip" title="<?php echo $button_save; ?>" class="btn btn-primary"><i class="fa fa-save"></i></button>
@@ -39,30 +39,30 @@
       <div class="panel-body">
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form" class="form-horizontal">
 
-         
+
                <ul  class="nav nav-tabs">
                 <li class="active"><a href="#setting_basic" data-toggle="tab">
-                  <i class="fa fa-cog"></i> 
+                  <i class="fa fa-cog"></i>
                   <?php echo $text_setting_basic; ?>
                 </a></li>
-                <li ><a href="#setting_button" data-toggle="tab"> 
-                  <i class="fa fa-bullhorn"></i> 
+                <li ><a href="#setting_button" data-toggle="tab">
+                  <i class="fa fa-bullhorn"></i>
                   <?php echo $text_setting_button; ?>
                 </a></li>
                 <li ><a href="#setting_field" data-toggle="tab">
-                  <i class="fa fa-bars"></i> 
+                  <i class="fa fa-bars"></i>
                   <?php echo $text_setting_field; ?>
                 </a></li>
                 <li ><a href="#setting_provider" data-toggle="tab">
-                  <i class="fa fa-code"></i> 
+                  <i class="fa fa-code"></i>
                   <?php echo $text_setting_provider; ?>
                 </a></li>
                 <li ><a href="#instruction" data-toggle="tab">
-                  <i class="fa fa-graduation-cap"></i> 
+                  <i class="fa fa-graduation-cap"></i>
                   <?php echo $text_instruction; ?>
                 </a></li>
                 <li ><a href="#debug" data-toggle="tab">
-                  <i class="fa fa-bug"></i> 
+                  <i class="fa fa-bug"></i>
                   <?php echo $text_debug; ?>
                 </a></li>
               </ul>
@@ -70,7 +70,7 @@
               <div class="tab-content">
                 <div id="setting_basic" class="tab-pane active">
 
-                  
+
 
                   <div class="form-group">
                       <label class="col-sm-2 control-label" for="input_status"><?php echo $entry_status; ?></label>
@@ -85,7 +85,7 @@
                           <?php } ?>
                         </select>
                       </div>
-                  </div> 
+                  </div>
 
                   <div class="form-group">
                       <label class="col-sm-2 control-label" for="select_size"><?php echo $entry_size; ?></label>
@@ -118,7 +118,7 @@
                           <?php } ?>
                         </select>
                       </div>
-                  </div> 
+                  </div>
 
                   <div class="form-group">
                       <label class="col-sm-2 control-label" for="select_customer_group"><?php echo $entry_customer_group; ?></label>
@@ -129,7 +129,7 @@
                           <?php } ?>
                         </select>
                       </div>
-                  </div> 
+                  </div>
 
                   <div class="form-group">
                       <label class="col-sm-2 control-label" for="input_debug_mode"><?php echo $entry_newsletter; ?></label>
@@ -206,11 +206,11 @@
                               <div class="col-sm-2">
                               <span for="d_social_login_modules_providers_<?php echo $key; ?>_enabled">
                                 <label >
-                                  <i class="<?php echo $provider['icon']; ?>"></i> 
+                                  <i class="<?php echo $provider['icon']; ?>"></i>
                                 <?php echo ${'text_'.$provider['id']}; ?></label ><br/>
                                 <input type="hidden" name="<?php echo $id;?>_setting[providers][<?php echo $key; ?>][enabled]" value="0" />
                                 <input type="checkbox" name="<?php echo $id;?>_setting[providers][<?php echo $key; ?>][enabled]" <?php echo ($provider['enabled'])? 'checked="checked"':'';?> value="1" id="<?php echo $id;?>_setting_providers_<?php echo $key; ?>_enabled"/>
-                                
+
                               </span>
                               <input type="hidden" name="<?php echo $id;?>_setting[providers][<?php echo $key; ?>][sort_order]" class="sort-value" value="<?php echo $provider['sort_order']; ?>" /><span class="dsl-icon-<?php echo $provider['id']; ?>"></span>
                               </div>
@@ -220,8 +220,8 @@
                                   <input type="text" name="<?php echo $id;?>_setting[providers][<?php echo $key; ?>][background_color]" class=" form-control" value="<?php echo $provider['background_color']; ?>" />
                                   <span class="input-group-addon"><i></i></span>
                                 </div>
-                                
-                                
+
+
                               </div>
                               <div class="col-sm-3">
                                 <label><?php echo $text_background_color_active; ?></label>
@@ -254,7 +254,7 @@
                 </div>
                 <div id="setting_field" class="tab-pane">
 
-                
+
                   <div class="form-group">
                       <label class="col-sm-2 control-label" ><?php echo $entry_fields_sort_order; ?></label>
                       <div class="col-sm-10">
@@ -294,38 +294,38 @@
                   <div class="form-group">
                       <h4 class="col-sm-12" for="select_return_url"><i class="<?php echo $provider['icon']; ?>"></i> <?php echo ${'text_'.$provider['id']}. ' '.$text_app_settings ?><input type="hidden" name="<?php echo $id;?>_setting[providers][<?php echo $key; ?>][id]" value="<?php echo $provider['id']; ?>" /></h4>
                       <div class="col-sm-12">
-                        
+
                         <?php foreach($provider['keys'] as $k => $v){ ?>
                           <div class="row">
                             <label class="col-sm-2 control-label">
                               <?php echo ${'text_app_'.$k}; ?>
                             </label>
                             <div class="col-sm-10">
-                             
-                                <input type="text" name="<?php echo $id;?>_setting[providers][<?php echo $key; ?>][keys][<?php echo $k; ?>]" value="<?php echo $v; ?>" class="form-control" />          
-                              
+
+                                <input type="text" name="<?php echo $id;?>_setting[providers][<?php echo $key; ?>][keys][<?php echo $k; ?>]" value="<?php echo $v; ?>" class="form-control" />
+
                             </div>
                           </div>
                           <?php } ?>
                           <?php if(isset($provider['scope'])){ ?>
                           <div class="row">
-                          
+
                               <label class="col-sm-2 control-label">
                                 <?php echo $text_app_scope; ?>
                               </label>
-                     
+
                             <div class="col-sm-10">
-                                <input type="text" name="<?php echo $id;?>_setting[providers][<?php echo $key; ?>][scope]" value="<?php echo $provider['scope']; ?>" class="form-control"  />          
-                         
+                                <input type="text" name="<?php echo $id;?>_setting[providers][<?php echo $key; ?>][scope]" value="<?php echo $provider['scope']; ?>" class="form-control"  />
+
                             </div>
                           </div>
                           <?php } ?>
 
                       </div>
                   </div>
-                  <?php } ?> 
+                  <?php } ?>
                 </div> <!--  //setting_provider -->
-       
+
                 <div class="tab-pane" id="instruction" >
                   <div class="tab-body"><?php echo $text_instructions_full; ?></div>
                 </div>
@@ -346,12 +346,12 @@
                         <a class="btn btn-danger" id="clear_debug_file"><?php echo $button_clear_debug_file; ?></a>
                       </div>
                     </div>
-                    
-                    
+
+
                   </div>
                 </div>
               </div>
-       
+
         </form>
       </div>
     </div>
@@ -363,7 +363,7 @@
   position: relative;
 }
 .sortable .well{
-  margin-bottom: 2px; 
+  margin-bottom: 2px;
 }
 .sortable .dragged {
     position: absolute;
@@ -389,7 +389,7 @@ function changeConfig(config){
 // sorting fields
 $('.sortable > tr').tsort({attr:'sort-data'});
 $(function () {
-  
+
   $("[type='checkbox']").bootstrapSwitch({
     'onColor': 'success'
   });
@@ -422,9 +422,9 @@ $(function () {
       item.closest('.sortable').find('.row').each(function (i, row) {
         console.log(i)
         $(row).find('.sort-value').val(i)
-        
+
       })
-   
+
       _super(item)
     }
   })
@@ -439,15 +439,15 @@ $(function () {
         $('#form').fadeTo('slow', 0.5);
       },
       complete: function() {
-        $('#form').fadeTo('slow', 1);   
+        $('#form').fadeTo('slow', 1);
       },
       success: function( response ) {
         console.log( response );
       }
-    });  
+    });
   });
 
-  $('body').on('click', '#get_update', function(){ 
+  $('body').on('click', '#get_update', function(){
     $.ajax( {
       url: '<?php echo $get_update; ?>',
       type: 'post',
@@ -458,7 +458,7 @@ $(function () {
       },
 
       complete: function() {
-        $('#form').fadeTo('slow', 1);   
+        $('#form').fadeTo('slow', 1);
       },
 
       success: function(json) {
@@ -481,12 +481,12 @@ $(function () {
 
         if(json['success']){
           $('#update_holder').html('<div class="alert alert-success">' + json['success'] + '</div>')
-        } 
+        }
       }
     });
   });
 
-  $('body').on('click', '#clear_debug_file', function(){ 
+  $('body').on('click', '#clear_debug_file', function(){
       $.ajax( {
         url: '<?php echo $clear_debug_file; ?>',
         type: 'post',
@@ -498,7 +498,7 @@ $(function () {
         },
 
         complete: function() {
-          $('#form').fadeTo('slow', 1);   
+          $('#form').fadeTo('slow', 1);
         },
 
         success: function(json) {
@@ -511,7 +511,7 @@ $(function () {
 
           if(json['success']){
             $('#debug .tab-body').prepend('<div class="alert alert-success">' + json['success'] + '</div>')
-          } 
+          }
         }
       });
     });
@@ -519,5 +519,5 @@ $(function () {
 
 
 });
-//--></script> 
+//--></script>
 <?php echo $footer; ?>

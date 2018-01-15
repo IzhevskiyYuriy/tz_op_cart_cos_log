@@ -4,3 +4,84 @@ VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqm
 ----------------------------------------------------------------------
 
 
+---------- Date: 2018-01-16 02:00:35 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=extension/module&token=I7vEFURy31HAqEG6x9EzR1TRmiRhKsRo
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_d_social_login.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 02:07:57 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=module/d_social_login&token=I7vEFURy31HAqEG6x9EzR1TRmiRhKsRo
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_admin_social_log.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_d_social_login.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 02:12:59 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=module/vqmod_manager&token=I7vEFURy31HAqEG6x9EzR1TRmiRhKsRo
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_admin_social_log.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_d_social_login.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 02:14:37 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=module/vqmod_manager&token=I7vEFURy31HAqEG6x9EzR1TRmiRhKsRo
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_admin_social_log.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_d_social_login.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 02:16:05 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=module/vqmod_manager&token=I7vEFURy31HAqEG6x9EzR1TRmiRhKsRo
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_admin_social_log.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+VQMod::_parseMods - DOM UNABLE TO LOAD: D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_d_social_login.xml
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 02:16:26 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=module/vqmod_manager&token=I7vEFURy31HAqEG6x9EzR1TRmiRhKsRo
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_admin_social_log.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_d_social_login.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 02:18:21 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=module/vqmod_manager&token=I7vEFURy31HAqEG6x9EzR1TRmiRhKsRo
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_admin_social_log.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 02:47:09 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=extension/module&token=2kNU4AYW31YiFx6ZUmkCr7g0tTqys3sg
+VQMod::_parseMods - FILE "D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/dev5_d_social_login_in_header.xml" REQUIRES VQMOD "2.5.0" OR ABOVE AND HAS BEEN SKIPPED
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 02:51:17 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/dev5_d_social_login_in_header.xml
+   id        : d_social_login_in_header
+   version   : 2.x
+   vqmver    : 2.1.0.1
+   author    : dev5.dreamvention.com
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $data['title'] = $this->document->getTitle();print_r($data['title']);
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 02:51:18 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/dev5_d_social_login_in_header.xml
+   id        : d_social_login_in_header
+   version   : 2.x
+   vqmver    : 2.1.0.1
+   author    : dev5.dreamvention.com
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $data['title'] = $this->document->getTitle();print_r($data['title']);
+----------------------------------------------------------------------
+
+

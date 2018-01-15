@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>d_admin_social_login</id>
+    <version>2.x</version>
+    <vqmver required="true">2.1.0.1</vqmver>
+    <author>izhevskiy</author>
+
+    <file name="admin/controller/module/d_social_login.php">
+        <operation error="skip">
+            <search position="replace"><![CDATA[$this->load->model('sale/customer_group');]]></search>
+            <add><![CDATA[$this->load->model('customer/customer_group'); ]]></add>
+        </operation>
+        <operation>
+            <search position="replace"><![CDATA[$data['customer_groups'] = $this->model_sale_customer_group->getCustomerGroups();]]></search>
+            <add><![CDATA[$data['customer_groups'] = $this->model_customer_customer_group->getCustomerGroups();]]></add>
+        </operation>
+    </file>
+
+</modification>

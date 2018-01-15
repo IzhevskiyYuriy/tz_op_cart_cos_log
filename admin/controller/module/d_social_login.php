@@ -298,28 +298,28 @@ class ControllerModuleDSocialLogin extends Controller {
 	*/
 	public function install() {
 
-		// $query = $this->db->query("SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = '".DB_DATABASE."' AND TABLE_NAME = '" . DB_PREFIX . "customer' ORDER BY ORDINAL_POSITION"); 
-		// $result = $query->rows; 
-		// $columns = array();
-		// foreach($result as $column){
-		// 	$columns[] = $column['COLUMN_NAME'];
-		// }
+		 $query = $this->db->query("SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = '".DB_DATABASE."' AND TABLE_NAME = '" . DB_PREFIX . "customer' ORDER BY ORDINAL_POSITION");
+		 $result = $query->rows;
+		 $columns = array();
+		 foreach($result as $column){
+		 	$columns[] = $column['COLUMN_NAME'];
+		 }
 
-		// if(!in_array('facebook_id', $columns)){
-		// 	 $this->db->query("ALTER TABLE " . DB_PREFIX . "customer ADD facebook_id VARCHAR( 255 )  NOT NULL");
-		// }
-		// if(!in_array('twitter_id', $columns)){
-		// 	 $this->db->query("ALTER TABLE " . DB_PREFIX . "customer ADD twitter_id VARCHAR( 255 )  NOT NULL");
-		// }
+		 if(!in_array('facebook_id', $columns)){
+		 	 $this->db->query("ALTER TABLE " . DB_PREFIX . "customer ADD facebook_id VARCHAR( 255 )  NOT NULL");
+		 }
+		 if(!in_array('twitter_id', $columns)){
+		 	 $this->db->query("ALTER TABLE " . DB_PREFIX . "customer ADD twitter_id VARCHAR( 255 )  NOT NULL");
+		 }
 		// if(!in_array('google_id', $columns)){
 		// 	 $this->db->query("ALTER TABLE " . DB_PREFIX . "customer ADD google_id VARCHAR( 255 )  NOT NULL");
 		// }
 		// if(!in_array('linkedin_id', $columns)){
 		// 	 $this->db->query("ALTER TABLE " . DB_PREFIX . "customer ADD linkedin_id VARCHAR( 255 )  NOT NULL");
 		// }
-		// if(!in_array('vkontakte_id', $columns)){
-		// 	 $this->db->query("ALTER TABLE " . DB_PREFIX . "customer ADD vkontakte_id VARCHAR( 255 )  NOT NULL");
-		// }
+		 if(!in_array('vkontakte_id', $columns)){
+		 	 $this->db->query("ALTER TABLE " . DB_PREFIX . "customer ADD vkontakte_id VARCHAR( 255 )  NOT NULL");
+		 }
 		// if(!in_array('odnoklassniki_id', $columns)){
 		// 	 $this->db->query("ALTER TABLE " . DB_PREFIX . "customer ADD odnoklassniki_id VARCHAR( 255 )  NOT NULL");
 		// }

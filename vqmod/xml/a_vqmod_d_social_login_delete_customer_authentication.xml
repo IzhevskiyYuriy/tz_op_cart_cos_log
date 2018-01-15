@@ -2,11 +2,11 @@
 <modification>
 	<id>d_social_login</id>
 	<version>2.x</version>
-	<vqmver required="true">2.5.0</vqmver>
-	<author>dreamvention.com</author>
-	
-	<file name="admin/model/sale/customer.php">
-		<operation error="skip" info="added to deleteCustomer customer_authentication delete">
+	<vqmver required="true">2.1.0.1</vqmver>
+	<author>izhevskiy</author>
+
+	<file name="admin/model/customer/customer.php">
+		<operation error="skip">
 			<search position="after"><![CDATA[$this->db->query("DELETE FROM " . DB_PREFIX . "customer WHERE customer_id = '" . (int)$customer_id . "'");]]></search>
 			<add><![CDATA[$this->db->query("DELETE FROM " . DB_PREFIX . "customer_authentication WHERE customer_id = '" . (int)$customer_id . "'"); //vqmod_d_social_login.xml]]></add>
 		</operation>
