@@ -85,3 +85,59 @@ VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $data['title'] = $this-
 ----------------------------------------------------------------------
 
 
+---------- Date: 2018-01-16 03:06:39 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_social_login_in_header.xml
+   id        : d_social_login_in_header
+   version   : 2.x
+   vqmver    : 2.1.0.1
+   author    : dev5.dreamvention.com
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php echo $language; ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 03:06:48 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_social_login_in_header.xml
+   id        : d_social_login_in_header
+   version   : 2.x
+   vqmver    : 2.1.0.1
+   author    : dev5.dreamvention.com
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php echo $language; ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 03:06:50 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_social_login_in_header.xml
+   id        : d_social_login_in_header
+   version   : 2.x
+   vqmver    : 2.1.0.1
+   author    : dev5.dreamvention.com
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php echo $language; ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-16 03:06:50 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : D:\OSPanel\domains\tz.dreamvention.com\vqmod/xml/a_vqmod_social_login_in_header.xml
+   id        : d_social_login_in_header
+   version   : 2.x
+   vqmver    : 2.1.0.1
+   author    : dev5.dreamvention.com
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php echo $language; ?>
+----------------------------------------------------------------------
+
+

@@ -115,7 +115,7 @@ $( document ).ready(function() {
   $('.dsl-button').on('click', function(){
     $('.dsl-button').find('.l-side').spin(false);
     $(this).find('.l-side').spin('<?php echo $size; ?>', '#fff');
-    
+
     $('.dsl-button').find('.dsl-icon').removeClass('dsl-hide-icon');
     $(this).find('.dsl-icon').addClass('dsl-hide-icon');
   })
