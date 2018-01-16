@@ -42,7 +42,7 @@
   <div class="container">
     <?php echo $currency; ?>
     <?php echo $language; ?>
- <div class="pull-left"><?php echo $d_social_login; ?></div>
+ <div class="pull-left"><?php if (isset($d_social_login)) echo $d_social_login; ?></div>
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">
         <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
